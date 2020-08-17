@@ -1,0 +1,151 @@
+#chat {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas:
+        "f c"
+        "f i";
+    grid-gap: 10px;
+}
+
+#friends {
+    grid-area: f;
+    display: grid;
+    background-color: #6f256f;
+    grid-template-rows: repeat(5, 1fr);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#chatbox {
+    grid-area: c;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#input {
+    grid-area: i;
+    display: grid;
+}
+
+.friend {
+    background-color: #8a458a;
+    font-size: 10px;
+    height: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    height: 20px;
+    width: 80%;
+    margin-left: 5px;
+}
+
+h3 {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "a a . ."
+        "c c . ."
+        ". . . ."
+        "e e f ."
+        ". . . .";
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.a {
+    grid-area: a;
+    align-items: center;
+    background-color: #ad9d9d;
+    
+}
+
+.b {
+    grid-area: b;
+    align-items: center;
+    background-color: #ad9d9d;
+    padding-right: 50%;
+}
+
+.c {
+    grid-area: c;
+    align-items: center;
+    background-color: #ad9d9d;
+    padding-left: 5px;
+}
+
+.d {
+    grid-area: d;
+    align-items: center;
+    background-color: #ad9d9d;
+}
+
+.e {
+    grid-area: e;
+    align-items: center;
+    background-color: #ad9d9d;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.f {
+    grid-area: f;
+    align-items: center;
+    background-color: #ad9d9d;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        ". ."
+        ". ."
+        "g h"
+        ". ."
+        "i j";
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    height: 100%;
+}
+
+.g {
+    grid-area: g;
+    align-items: center;
+    background-color: #ad9d9d;
+    background-color: #3ee500;
+}
+
+.h {
+    grid-area: h;
+    align-items: center;
+    background-color: #ad9d9d;
+    background-color: #3ee500;
+}
+
+.i {
+    grid-area: i;
+    align-items: center;
+    background-color: #ad9d9d;
+    background-color: #3ee500;
+}
+
+.j {
+    grid-area: j;
+    align-items: center;
+    background-color: #ad9d9d;
+    background-color: #3ee500;
+}
+
+.time {
+    text-align: right;
+    margin-left: 50%;
+}
