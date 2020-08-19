@@ -46,46 +46,37 @@ h3 {
 
 .left {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
-        "a a . ."
-        "c c . ."
-        ". . . ."
-        "e e f ."
-        ". . . .";
+        "a . "
+        "c . "
+        ". . "
+        "e f "
+        ". . ";
     font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
     height: 100%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
 }
 
 .a {
     grid-area: a;
     align-items: center;
     background-color: #ad9d9d;
-    
-}
-
-.b {
-    grid-area: b;
-    align-items: center;
-    background-color: #ad9d9d;
-    padding-right: 50%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%;
 }
 
 .c {
     grid-area: c;
     align-items: center;
     background-color: #ad9d9d;
-    padding-left: 5px;
-}
-
-.d {
-    grid-area: d;
-    align-items: center;
-    background-color: #ad9d9d;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%;
 }
 
 .e {
@@ -93,13 +84,17 @@ h3 {
     align-items: center;
     background-color: #ad9d9d;
     width: 100%;
-    padding-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .f {
     grid-area: f;
     align-items: center;
     background-color: #ad9d9d;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .right {
@@ -146,6 +141,11 @@ h3 {
 }
 
 .time {
-    text-align: right;
+    text-align: left;
     margin-left: 50%;
+    font-size: 15px;
+    margin: 20px 0 0 50px;
+    padding-top: 20px;
+    width: 25px;
+    height: 10px;
 }
